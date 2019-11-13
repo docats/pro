@@ -1,0 +1,1863 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 清除浮動 */
+
+.clearfix{
+	content: "";
+	display:block;
+	clear:both;
+	height: 0;
+}
+
+body{
+	box-sizing: border-box;
+	font-family: Microsoft JhengHei;
+}
+
+
+.wrapper,.wrapper_fistlogin{
+	width: 1024px;
+	min-height: 768px;
+	background-color:#f2f2f2;
+	margin:auto;
+}
+
+.top_bar{
+	height: 60px;
+	background:#0e243e;
+}
+
+.title_logo{
+	width:224px;
+	min-width: 224px;
+	height: 56px;
+}
+
+.title_logo img{
+	max-width:100%;
+	height: auto;
+	margin:auto;
+	padding:17px 20px;
+}
+
+
+
+/*公用區*/
+
+/*webkit瀏覽器專用*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{ color: #bebebf; }
+/*Firefox 4-18瀏覽器專用*/
+input::-moz-placeholder,textarea::-moz-input-placeholder{ color: #bebebf; }
+/*Firefox 19+瀏覽器專用*/
+input::-moz-placeholder,textarea::-moz-input-placeholder{color:#bebebf;}
+/*IE10瀏覽器專用*/
+input::-ms-input-placeholder,textarea::-ms-input-placeholder{color: #bebebf;}
+
+
+/*RegisterCompany 公司註冊*/
+
+.log_firm input{
+	padding-left:4px;
+}
+
+.logo_step{
+	width: 750px;
+	margin:auto;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.logo_step ul{
+	width:750px;
+	margin:30px 0px;
+}
+
+.logo_step ul li,.psrsonal_step ul li{
+	float:left;
+	padding-left:80px;
+}
+
+.step_num,.step_word{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.step_word{
+	font-size: 16px;
+	color:#333;
+	font-weight: bold;
+	padding-left:10px;
+}
+
+.content,.content_complete{
+	width: 700px;
+	min-height: 560px;
+	border:1px solid #bfbfbf;
+	background: #fff;
+	border-radius: 10px;
+	margin:50px auto 0;
+}
+
+.data_da,.data_state{
+	width: 100px;
+	font-size: 14px;
+	color:#000;
+	text-align:right;
+	font-weight: bold;
+}
+
+.data_state{
+    width: 50px;
+    text-align: center;
+	padding:0;
+}
+
+.main_data_da{
+	width: 444px;
+	height: 30px;
+	border:1px solid #bebebf;
+	border-radius: 10px;
+	margin:5px 0;
+}
+
+.my_country{
+	width:200px;
+	height: 30px;
+	border:1px solid #bebebf;
+	border-radius: 10px;
+	margin:5px 0;
+}
+
+.log_firm{
+	margin:30px 46px;
+}
+
+.main_data_de{
+	border:1px solid #bfbfbf;
+	border-radius:10px;
+	height: 30px;
+	width: 100px;
+	margin:5px 0;
+}
+
+.main_data_dd{
+	width: 170px;
+	height: 30px;
+	margin:5px 0;
+	border: 1px solid #bfbfbf;
+	border-radius: 10px;
+}
+
+.firm_contact,.firm_zoom{
+	width: 333px;
+	border:1px solid #bfbfbf;
+	border-radius:10px;
+	height: 30px;
+	margin:5px 0 5px 10px;
+}
+
+.firm_zoom{
+	padding-left:4px;
+	width: 260px;
+}
+
+.des_btn,.mdes_btn{
+	width:400px;
+	margin:60px auto;
+	font-size: 0;
+	text-align: center;
+	
+}
+
+.link_cancel,.next_step,.pre_step,.get_confirm{
+	font-size: 16px;
+	display:inline-block;
+	margin:0 6px;
+}
+
+.get_confirm a{
+	text-decoration: none;
+	padding:6px 28px;
+	background-color: #4C7AB2;
+	color:#fff;
+	border-radius: 5px;
+}
+
+.link_cancel a{
+	color: #B41D22;
+    text-decoration: none;
+    padding: 6px 28px;
+    border: 1px solid #b41d22;
+    border-radius: 5px;
+}
+
+.next_step a{
+	
+	text-decoration: none;
+	padding:6px 20px;
+	background-color: #4C7AB2;
+	color:#fff;
+	border-radius: 5px;
+}
+
+.footer{
+	width:700px;
+	margin:auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	padding:30px;
+}
+
+.footer h2,.footer span, .footer_reset h2, .footer_reset span{
+	font-size: 10px;
+}
+
+.footer span,.footer_reset span{
+	padding-left:10px;
+}
+
+.number{
+	padding-right:10px;
+}
+
+.zoom{
+	padding-right:24px;
+}
+
+.industry_select{
+	width: 450px;
+    height: 30px;
+    border: 1px solid #bebebf;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/*初次註冊*/
+
+.login_frame{
+	width: 400px;
+	background:#fff;
+	min-height: 450px;
+	border:1px solid #bfbfbf;
+	border-radius: 10px;
+	margin:50px auto 0;
+	box-shadow: 0 3px 5px rgba(0,0,0,.2), 0 3px 15px rgba(0,0,0,.2);
+}
+
+.logo_login h2{
+	width:174px;
+	margin:10px auto 20px;
+}
+
+.login_ac p{
+	font-weight: bold;
+}
+
+.login_ac p,.login_word p{
+	text-align:center;
+	letter-spacing:1px;
+	color:#333;
+}
+
+.login_word p{
+	padding-top:60px;
+	font-size: 14px;
+}
+
+.first_btn{
+	width: 300px;
+	margin:20px auto 10px;
+}
+
+.first_btn a{
+	display:block;
+	text-decoration: none;
+	background-color: #4C7AB2;
+	color:#fff;
+	border-radius: 5px;
+	padding:10px 30px;
+	font-weight: bold;
+	text-align:center;
+}
+.login_qa{
+	width: 300px;
+	margin:auto;
+}
+
+
+.login_qa a{
+	color:#666;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-align:center;
+	display: block;
+}
+
+.login_qa img{
+	width:18px;
+	height:18px;
+	vertical-align: middle;
+}
+
+.login_list,.login_list_first{
+	width:150px;
+	display: flex;
+	flex-direction: row;
+	margin:30px auto;
+	font-size: 0;
+	justify-content:center;
+	
+}
+
+.login_list ul{
+	padding-top:20px;
+	padding-bottom:6px;
+}
+
+.login_list ul li,.login_list_first ul li{
+	display:inline-block;
+}
+
+.login_list ul li a,.login_list_first ul li a{
+	text-decoration: none;
+	font-size: 12px;
+	color:#333;
+	border-right:1px solid #333;
+	padding:0 6px;
+}
+
+.login_list ul .last_line a:last-child,.login_list_first ul .last_line a:last-child{
+	border-right:none;
+}
+
+.wrapper_fistlogin{
+	min-height:500px;
+}
+
+.login_list_first ul{
+	padding-top:100px;
+}
+
+
+/*個人註冊*/
+.dept_fill{
+	width: 214px;
+	height: 30px;
+    border: 1px solid #bebebf;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.log_person{
+	margin:60px;
+}
+
+
+.log_person input{
+	padding-left:4px;
+}
+
+.pre_step{
+	font-size: 16px;
+    display: inline-block;
+}
+
+.pre_step a{
+	text-decoration: none;
+    padding: 6px 20px;
+    border: 1px solid #bebebf;
+	color:#333;
+    border-radius: 5px;
+}
+
+.mdes_btn{
+	width: 500px;
+	margin-top:100px;
+}
+
+.my_phone,.my_area{
+	height: 30px;
+    margin: 5px 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+}
+
+.my_area{
+	width:60px;
+	margin: 5px 0 5px 5px;
+}
+
+.phone_fill,.phone_ext{
+	height: 30px;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+	margin: 5px 0 5px 5px;
+}
+
+.phone_fill{
+	width:215px;
+}
+
+.phone_ext{
+	width:80px;
+}
+
+.firm_mobile{
+	width:380px;
+	height: 30px;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+	margin: 5px 0 5px 5px;
+}
+
+.confirm_psw{
+	width: 444px;
+	height: 30px;
+    margin: 5px 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 10px;
+	background:#eee;
+}
+
+.eye_home{
+	position:relative;
+}
+
+.eye{
+position:absolute;
+right:20px;
+top:15px;
+}
+
+
+/*新帳戶註冊完成*/
+
+.success_frame{
+	width: 500px;
+	margin:100px auto 128px;
+	display:flex;
+	flex-direction: column;
+	text-align:center;
+}
+
+.success_frame h3{
+	padding:20px 0 60px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color:#666;
+}
+
+.success_frame h5{
+	color:#4B75A8;
+	font-size:14px;
+	line-height: 1.6;
+}
+
+.success_frame p{
+	font-size: 14px;
+	padding:10px 0 180px 0;
+	font-weight:bold;
+}
+
+.btn_ac{
+width: 130px;
+height: 32px;
+margin:0 auto;
+border-radius: 5px;
+background-color:#4C7AB2;
+color:#fff;
+border:none;
+}
+
+
+
+/*確認註冊資料*/
+
+.conpany_info h3,.conpany_person h3,.person_info h3{
+	color:#7E7E7F;
+	font-size: 16px;
+	text-align:center;
+	margin:0 30px;
+	padding-bottom:20px;
+	font-weight:bold;
+}
+
+.conpany_info,.conpany_person,.person_info{
+	border-bottom:1px solid #bfbfbe;
+	margin:0 50px;
+	padding-top:50px;
+}
+
+.conpany_person{
+	border-top:1px solid #bfbfbe;
+	padding-top:20px;
+}
+
+.just_line{
+	border-top:1px solid #bfbfbe;
+	margin:0 50px;
+	padding-top:20px;
+}
+
+.log_firm_complete{
+	margin:30px 0 40px;
+}
+
+.log_firm_complete td{
+	padding:10px 0px;
+	font-size: 14px;
+}
+
+.data_db{
+	padding:0;
+}
+
+.privacy{
+	text-align: center;
+	color:#666;
+	font-size: 12px;
+}
+
+.privacy input{
+	vertical-align: middle;
+}
+
+
+/*個人註冊*/
+
+.psrsonal_step{
+	width:520px;
+	margin: auto;
+	overflow: hidden;
+	font-size:0;
+}
+
+.psrsonal_step ul{
+	margin:30px 0px;
+}
+
+/*重設密碼*/
+
+.sign_in_logo{
+	width: 150px;
+	margin: 10px auto;
+}
+
+.password_notice{
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+}
+
+
+.password_notice p{
+	text-align:center;
+	color: #7E7E7F;
+	font-size: 14px;
+	line-height:1.6;
+}
+
+.password_notice h3{
+	font-size: 16px;
+	text-align:center;
+	color: rgb(109, 109, 109);
+	font-weight: bold;
+}
+
+.resetPswFrame{
+	width:290px;
+	margin:20px auto 0;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+}
+
+.resetPSW input{
+	width: 290px;
+	height: 40px;
+	border:1px solid #bfbfbe;
+	border-radius: 10px;
+	margin-bottom:15px;
+	padding-left:10px;
+}
+
+.footer_reset{
+	margin:auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	padding:30px;
+	width: 300px;
+}
+
+.restPSW_btn{
+	width: 300px;
+	border:1px solid #4f81bd;
+	border-radius:5px;
+	margin-top:24px;
+}
+
+.restPSW_btn a{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	padding:10px 0;
+	font-size: 14px;
+	color:#4f81bd;
+}
+
+.restPSW_btn a:hover{
+	background-color:#4f81bd;
+	color:#fff;
+}
+
+.eyePSW{
+	position: absolute;
+	right:0px;
+	top:15px;
+}
+
+/*B區開始*/
+
+/*B建案列表*/
+
+.wrapper_buildingList{
+	/* width: 100vw; */
+	min-width:1024px;
+	/* height: 100vh; */
+	min-height: 100vh;
+	/* overflow-y:hidden; */
+	font-size: 12px;	
+}
+
+.build_header{
+	width: 100%;
+	height: 56px;
+	min-height: 56px;
+	color:#fff;
+	z-index:30;
+	background:#0E243E;
+	position: relative;
+}
+
+.header_upper{
+	height: 100%;
+}
+
+.header_frame{
+	display:flex;
+	align-items:center;
+	height: 100%;
+}
+
+.header_menu_switcher{
+	display: flex;
+	min-width:40px;
+	cursor:pointer;
+	height:100%;
+	position:relative;
+}
+
+.icon-menu a{
+	background:url("../images/icon/apps_m.png") no-repeat center center;
+	width: 20px;
+	height: 20px;
+	display:block;
+	position:absolute;
+	top: 18px;
+	left:12px;
+}
+
+.icon-menu a:hover{
+	background:url("../images/icon/apps_hover.png") no-repeat center center;
+}
+
+.header_logo {
+	width: 224px;
+	min-width:224px;
+	height: 56px;
+	padding-left:20px;
+	display:flex;
+}
+
+.header_logo a{
+	display:flex;
+	align-items:center;
+	cursor:cursor;
+}
+
+.header_switch-wrapper{
+	display:flex;
+	border-left:1px solid #fff;
+	padding-left: 25px;
+	height: 28px;
+	width: 220px;
+	min-width: 220px;
+}
+
+.header_company-name{
+	display:flex;
+	align-items: center;
+}
+
+.header_stickRight{
+	box-sizing: border-box;
+	padding-right:30px;
+	display:flex;
+	flex:1 1 auto;
+	justify-content: flex-end;
+	align-items:center;
+}
+
+.header_lauguage{
+	display:flex;
+	height: 25px;
+	margin-right:20px;
+}
+
+.header_icon img{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+.header_icon a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.header_bell img{
+	width: 24px;
+	height: 24px;
+}
+
+.header_user-profile{
+	position: relative;
+	margin-left:20px;
+}
+
+.header_no-pic{
+	display:flex;
+	cursor:pointer;
+	width: 100%;
+	height: 100%;
+	border:2px solid #fff;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow: hidden;
+	font-size: 16px;
+	user-select:none;
+	width: 31px;
+	height: 31px;
+	min-width: 31px;
+	min-height: 31px;
+}
+
+.main_main,.main_list{
+	height: calc(100% - 56px);
+	display: flex;
+	width: 100%;
+	flex:1 1 auto;
+	min-height:900px;
+}
+
+.sidebar_side-bar{
+	display: flex;
+	flex-direction: column;
+	width: 40px;
+	min-width: 40px;
+	background-color:#0E243E;
+}
+
+.sidebarMenu_entry,.sidebarMenu{
+	display:flex;
+	justify-content:center;
+}
+
+.sidebarMenu_pic{
+	width: 40px;
+	line-height: 40px;
+	align-items: center;
+	justify-content: center;
+	background-color:#f00;
+}
+
+.sidebarMenu_entry a{
+	background:url("../images/icon/outline_folder.png") no-repeat center center;
+	display:block;
+	width: 30px;
+	height: 30px;
+	padding:6px 5px;
+}
+
+.sidebarMenu_entry a:hover{
+	background:url("../images/icon/baseline_folder_hover.png") no-repeat center center;
+}
+
+.sidebarMenu_entry a:link{
+	background-color:#4c7ab2;
+}
+
+.sidebarMenu a{
+	background:url("../images/icon/assignment_ind.png") no-repeat center center;
+	display:block;
+	width: 30px;
+	height: 30px;
+	padding:10px 5px;
+}
+
+.sidebarMenu a:hover{
+	background:url("../images/icon/assignment_ind_hover.png") no-repeat center center;
+}
+
+.sidebar_bottom{
+	margin-top: auto;
+}
+
+
+.topButtons_btn{
+	background:#1EA74F;
+	border:1px solid #1EA74F;
+	color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	cursor:pointer;
+	user-select:none;
+	height: 28px;
+	width: 100px;
+	border-radius:4px;
+	transition:all .15s;
+	margin-right:10px;
+}
+
+.topButtons_buttons a{
+	text-decoration: none;
+}
+
+.main_board{
+	width: 100%;
+	height: 100%;
+}
+
+.top_top__3h_DI{
+	height: 56px;
+	min-height: 56px;
+	width: 100%;
+	display:flex;
+	align-items: center;
+	background-color:#fff;
+	border-bottom:1px solid #e8eaed;
+	/* padding-left: 30px; */
+	font-size: 14px;
+}
+
+.breadCrumbs_root__3-gJW{
+	display:flex;
+	align-items:center;
+	margin-left:30px;
+}
+
+.breadCrumbs_text a{
+	font-weight:700;
+	color:#666;
+	text-decoration:none;
+}
+
+.top_right-wrapper{
+	height: 100%;
+	display:flex;
+	margin-left:auto;
+	padding-right: 20px;
+}
+
+.main_main-area,.main_main_addcase{
+	width:calc(100%-40px);
+	height: 100%;
+	/* overflow-y:hidden; */
+	/* display:flex; */
+	flex:1 1 auto;
+	overflow:hidden;
+	min-width:800px;	
+}
+
+.topButtons_buttons{
+	display:flex;
+	align-items: center;
+}
+
+.topButtons_root{
+	display:flex;
+	align-items:center;
+}
+
+.build_list_btn{
+	background:#fafafa;
+	border:none;
+	color:#666;
+}
+
+.build_list_btn img{
+	width: 10px;
+	height: 10px;
+	padding-bottom:2px;
+}
+
+.projectList_project-list{
+	display:flex;
+	flex-direction: column;
+	/* overflow-y:auto; */
+	width: 100%;
+	height:calc(100%-56px);
+	
+}
+
+.projectList_list-head{
+	display:flex;
+	background-color:#fafafa;
+	height: 48px;
+	color:#666;
+	align-items: center;
+	padding-left: 30px;
+	overflow-y:auto;
+	border-bottom:1px solid #e6e6e6;
+}
+
+.projectList_name__1oNTN{
+	padding-top:6px;
+	display:flex;
+	flex:1 1 auto;
+}
+
+.projectList_blueprint-amount__2jSbI,.projectList_team-size__3gKyu{
+	min-width: 150px;
+}
+
+.projecdate_new{
+	min-width:300px;
+}
+
+.projecdate_new img{
+	padding-bottom:0px;
+}
+
+
+
+.projectList_blueprint-amount__2jSbI{
+	margin-left:50px;
+}
+
+.projectList_purview{
+	min-width:130px;
+}
+
+.projectList_list__3Y3Bn{
+	display:flex;
+	flex-direction:column;
+	background-color:#fff;
+	max-height:calc(100%-48px);
+}
+
+.projectList_section__29-9h a{
+	display:block;
+	font-size: 14px;
+	text-decoration:none;
+	color:#333;
+}
+
+.projectList_section__29-9h img{
+	vertical-align: middle;
+	padding-right:6px;
+}
+
+.projectList_row__3SrJz{
+	display:flex;
+	height: 48px;
+	align-items:center;
+	width: 100%;
+	min-height: 55px;
+	padding: 15px 30px 0 30px;
+}
+
+.announcement_notice img{
+	width: 14px;
+	height: 14px;
+}
+
+.purview_btn,.control_btn,.share_btn,.only_view_btn{
+	background: #4C7AB2;
+    border: 1px solid #4C7AB2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    height: 28px;
+    width: 100px;
+    border-radius: 4px;
+    transition: all .15s;
+    margin-right:60px;
+}
+
+.control_btn{
+	background: #000;
+    border: 1px solid #000;
+}
+
+.share_btn{
+	background: #E62019;
+    border: 1px solid #E62019;
+}
+
+.only_view_btn{
+	background: #97B459;
+    border: 1px solid #97B459;
+}
+
+.projectList_purview a{
+	text-decoration:none;
+	font-size: 12px;
+}
+
+.announcement_notice{
+	/* min-width: 50px; */
+	
+}
+
+.project_plan{
+	min-width:97px;
+	margin-left:136px;
+}
+
+.projec_update{
+	min-width: 262px;
+	margin-left:53px;
+	margin-right:35px;
+}
+
+
+.project_fold,.project_title_frame{
+	float:left;
+}
+
+.project_con{
+	font-size: 12px;
+	color:#666;
+}
+
+.project_title_frame{
+	line-height:18px;
+}
+
+.login_notice{
+	margin:0 auto 30px;
+	font-size: 18px;
+	color:#666;
+	font-weight: 700;
+	width: 100%;
+	text-align:center;
+}
+
+.signIn_typecontroller__vlZVi a{
+	display:flex;
+	justify-content:flex-end;
+	padding-right:60px;
+	font-size: 12px;
+	color:#318dde;
+	cursor:pointer;
+	margin-bottom:8px;
+	opacity: .8;
+	text-decoration:none;
+}
+
+
+.header-list{
+	display:flex;
+	flex-direction: column;
+}
+
+.header-lange{
+	width: 150px;
+	padding:8px 5px;
+	color:#666;
+	cursor:pointer;
+}
+
+.popup-content{
+	position: absolute; 
+	z-index: 999; 
+	width: fit-content; 
+	background: rgb(255, 255, 255); 
+	border: 1px solid rgb(187, 187, 187); 
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px; 
+	padding: 0px; 
+	border-radius: 3px; 
+	top:56px; 
+	right:104px;
+}
+
+.popup-content_bell{
+	position: absolute; 
+	z-index: 999; 
+	width: fit-content; 
+	background: rgb(255, 255, 255); 
+	border: 1px solid rgb(187, 187, 187);
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px; 
+	padding: 0px; 
+	border-radius: 3px; 
+	top:56px; 
+	right:4px;
+}
+
+.header_account-message__1IDkK{
+	width:240px;
+	user-select:none;
+}
+
+.header_top__1wuFc{
+	line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #343f4e;
+	padding-left: 15px;
+	display:flex;
+}
+
+.header_column__vaQSb{
+	max-height:500px;
+	/* overflow-y:scroll; */
+	width:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+.header_row__2cEYH_content{
+	padding:8px 10px;
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+
+
+.header_text__wgXvx{
+	max-width: 100%;
+	line-height:16px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: pre-line;
+	word-break: break-all;
+	color:#333;
+}
+
+.header_text__wgXvx img{
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	padding-right:4px;
+}
+.header_date__1-Oi9{
+	padding-left:20px;
+	color:#666;
+}
+
+.see_more{
+	padding:10px 0;
+	border-top: 1px solid rgb(187, 187, 187);
+}
+
+.see_more a{
+	display:inline-block;
+	text-decoration: none;
+	padding:6px 0 6px 10px;
+	color:#666;
+}
+
+.header_span{
+	/* padding-bottom:20px; */
+}
+
+.header_row__2cEYH_content:hover,.see_more:hover{
+	background-color:#F5F5F5;
+	border-left: 3px solid #318dde;
+}
+
+.header-lange:hover{
+	font-weight:700;
+}
+
+.popup-content_user{
+	position: absolute; 
+	z-index: 1002; 
+	width: fit-content;
+	background: rgb(255, 255, 255); 
+	border: 1px solid rgb(187, 187, 187); 
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px; 
+	padding: 0px; 
+	border-radius: 3px; 
+	top: 45px; 
+	left: -247px;
+}
+
+.header_popup__2dbJ1{
+	color: #666;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_info-wrapper__10CSN{
+	padding: 10px 0 8px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.header_link-wrapper__1f7Ih{
+	width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.header_link-wrapper__1f7Ih a{
+	text-decoration: none;
+	color:#666;
+}
+
+.header_button-wrapper__2mifh{
+	background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header_btn__3jOvr{
+	margin-left: auto;
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	height: 30px;
+	width: 120px;
+	color:#666;
+	background-color:unset;
+	border:1px solid #666;
+	border-radius:4px;
+	user-select:none;
+	cursor: pointer;
+	outline:none;
+	transition:color .15s,background-color .15s;
+}
+
+.header_btn__3jOvr:hover{
+	background-color:#E8E8E8;
+}
+
+.header_image-wrapper__t_rJZ{
+	padding:0 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.header_no-pic__BRZDl{
+	background-color: #318dde;
+    border-color: #318dde;
+    color: #fff;
+	font-size: 20px;
+	width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+	cursor: default;
+	display:flex;
+	border:2px solid #fff;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow:hidden;
+}
+
+.header_info__vZYwK{
+	padding: 0 10px;
+    margin-top: 10px;
+}
+
+.header_name__29E_Y{
+	line-height: 16px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header_email__20T9L{
+	color:#bfbfbf;
+}
+
+.header_link__1-QN4{
+	line-height: 28px;
+    border-left: 3px solid #fff;
+    padding-left: 17px;
+	cursor: pointer;
+	user-select:none;
+}
+
+.header_link__1-QN4:hover{
+	background-color: #efefef;
+    border-color: #318dde;
+}
+
+/* .show{
+	display:block;
+}
+
+.dropdown-content{
+	display:none;
+} */
+
+/*登入*/
+
+.area_code{
+	width: 60px;
+    height: 44px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #BFBFBE;
+    padding: 4px 0;
+}
+
+.LoginFrame{
+	width:290px;
+	margin:10px auto 20px;
+	
+}
+
+.input_number{
+	width: 210px;
+    height: 40px;
+    float: left;
+    margin-left: 6px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #BFBFBE;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.login_mobile{
+	margin-bottom:15px;
+}
+
+
+.login_info input{
+	width: 230px;
+	height: 40px;
+	border:1px solid #bfbfbe;
+	border-radius: 0 10px 10px 0;
+	margin-bottom:15px;
+	padding-left:10px;
+}
+
+.left_p{
+	font-size: 14px;
+	color:#7e7e7f;
+}
+
+
+.left_p .check_box{
+	width: 14px;
+	height: 14px;
+	display:inline-block;
+	border-radius:3px;
+	border:1px solid rgba(0,0,0,.16);
+	background-color:#fff;
+	float:left;	
+}
+
+.left_p span{
+	display:inline-block;
+	width: 100px;
+	height: 20px;
+	margin:2px 0 0 4px;
+}
+
+.login_btn{
+	width: 286px;
+	height: 40px;
+	margin:30px auto;
+	border:1px solid #bfbfbe;
+	border-radius:5px;
+	background-color:#fff;
+}
+
+.frame_btn{
+	border-color:#aaa;
+	color:#aaa;
+}
+
+.LoginFrame .icon{
+	width: 45px;
+	height: 42px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 10px 0 0 10px;
+	vertical-align: middle;
+	background-color:#f2f2f2;
+	position: relative;
+}
+
+.LoginFrame img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+}
+
+
+
+.icon,.login_info{
+float:left;
+}
+
+.eye_toggle{
+	position: absolute;
+	right:26px;
+	top:22px;
+}
+
+/*忘記密碼*/
+
+.forget_PswFrame{
+	width: 290px;
+	margin:30px auto 10px;
+}
+
+.forget_PSW input{
+	width: 230px;
+	height: 40px;
+    border: 1px solid #bfbfbe;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.icon_ac{
+	float:left;
+	width: 45px;
+    height: 42px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    vertical-align: middle;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+.icon_ac img{
+	position:absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin:auto;
+}
+
+.forget_PSW p{
+	font-size: 12px;
+	color:#7E7E7F;
+}
+
+.PSW_reset_btn{
+	width: 286px;
+	height: 41px;
+	border:1px solid #4f81bd;
+	border-radius: 5px;
+	margin-top:60px;
+	color:#fff;
+	background-color:#4f81bd;
+}
+
+
+
+
+/*重設密碼-驗證碼*/
+
+.resetPswFrame .v-code{
+	font-size: 12px;
+    color: #7E7E7F;
+}
+
+.v-code img{
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	padding-left:4px;
+}
+
+.v-code_btn{
+	width: 300px;
+	height: 41px;
+    border: 1px solid #4f81bd;
+    border-radius: 5px;
+	margin-top: 60px;
+	color:#fff;
+	background-color:#4f81bd;
+	
+}
+
+
+
+/*建案訊息列表與內容*/
+
+.breadCrumbs_text .ac{
+	text-decoration:underline;
+}
+
+.msg_frame img{
+	width: 14px;
+	height: 14px;
+}
+
+.projectList_amount{
+	min-width: 250px;
+	margin-left:50px;
+}
+
+.projectList_time{
+	min-width: 250px;
+}
+
+.project_class{
+	min-width: 250px;
+	margin-right:450px;
+}
+
+.company_info{
+	min-width: 250px;
+	margin-left:50px;
+}
+
+.project_date{
+	min-width: 250px;
+}
+
+.projec_info{
+	min-width: 250px;
+	margin-right:480px;
+}
+
+.msg_frame,.msg_title{
+	min-width: 200px;
+}
+
+.msg_title img{
+	vertical-align: middle;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+
+.new_title_frame{
+	display:flex;
+	justify-content:space-between;
+	border-bottom:1px solid #e8eaed;
+}
+
+.new_title{
+	font-size: 14px;
+}
+
+.new_title,.new_class{
+	padding:10px 30px;
+}
+
+.new_box,.new_time_box{
+	padding:20px 0 30px;
+}
+
+.new_time_box p{
+	padding:10px 30px;
+}
+
+.deep_blue{
+	color:#1F4678;
+}
+
+.new_content p{
+	line-height:24px;
+	padding:20px 30px;
+	color:#666;
+}
+
+.new_class{
+	color:#666;
+}
+
+.invite_frame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:300px;
+}
+
+.invite_confirm{
+	background-color:#4C7AB2;
+	color:#fff;
+	border-radius: 5px;
+	border:none;
+	width: 88px;
+	height: 33px;
+	font-size: 16px;
+	font-family: Microsoft JhengHei;
+	margin-right: 6px;
+}
+
+.invite_refuse{
+	background-color:#E62019;
+	color:#fff;
+	border-radius: 5px;
+	border:none;
+	width: 88px;
+	height: 33px;
+	font-size: 16px;
+	font-family: Microsoft JhengHei;
+}
+
+/*B300新增建案*/
+.add_case_frame{
+	background-color:#fafafa;
+	min-width: 768px;
+	width: 100%;
+	height: calc(100%-56px);
+	max-height: calc(100% - 56px);
+	max-height: calc(100% - 56px);
+	align-items: center;
+	padding:20px 0;
+	overflow-y: auto;
+}
+
+.newProject_frame{
+	padding:30px 30px 22px;
+	width: 720px;
+	min-width: 720px;
+	height:fit-content;
+	margin:0 auto;
+	overflow: visible;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	background-color:#fff;
+}
+
+.newProject_type{
+	display:flex;
+	flex-direction:column;
+}
+
+.new_case_build{
+	width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new_case_title{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color:#666;
+	line-height:120%;
+}
+
+.new_case_step{
+	display: flex;
+    flex-direction: row;
+}
+
+.new_case_circle{
+	display:flex;
+	width: 14px;
+	height: 14px;
+	background-color:#ececec;
+	border-radius:50%;
+	margin:0 10px;
+}
+
+.new_case_circle_active{
+	background-color: #318dde;
+}
+
+.newcase_fill{
+	display:flex;
+	flex-direction: column;
+}
+
+.please_fill_frame{
+	display: flex;
+	flex-direction: row;
+	width:100%;
+}
+
+.please_fill_title{
+	font-size: 16px;
+	width:100%;
+	text-align:center;
+	margin-bottom: 20px;
+	color:#666;
+	line-height: 120%;
+}
+
+.project_input{
+	width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 25px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.project_info{
+	display:flex;
+	flex-direction: column;
+	padding:0 auto 60px;
+}
+
+.project_info_row{
+	margin-bottom: 20px;
+	align-items: center;
+	padding-right:300px;
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.project_title{
+	flex:1 1 auto;
+	margin-right: 20px;
+	text-align: right;
+	color:#666;
+	line-height:120%;
+}
+
+.input_data{
+	min-width:320px;
+	height: 35px;	
+}
+
+.input_data[type="text"]{
+	color:#666;
+	padding:0px 10px;
+	border:1px solid #ccc;
+	border-radius:4px;
+}
+
+.input_select{
+	min-width:342px;
+	height: 40px;
+	color:rgba(128,128,128);
+	padding:0 6px;
+	border:1px solid #ccc;
+	border-radius:4px;
+}
+
+.newProject_next{
+	display:flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+
+.newProject_next a{
+	color:#fff;
+	display:inline-block;
+	text-decoration:none;
+	width: 115px;
+	height: 30px;
+	border-radius: 4px;
+	transition: all .15s;
+	line-height: 30px;
+	background: #4C7AB2;
+    border: 1px solid #4C7AB2;
+}
+
+.main_main_addcase,.main_list{
+	min-height: 880px;
+	background-color: #fafafa;
+}
+
+.cancelled_buttons a{
+	text-decoration:none;
+	color:#E62019;
+	padding:8px 40px;
+	display:block;
+}
+
+.cancelled_buttons{
+	background-color:#fff;
+	border:1px solid #E62019;
+	border-radius: 4px;
+}
+
+.cancelled_wrap{
+	display:flex;
+	margin-left:auto;
+	padding-right:20px;
+}

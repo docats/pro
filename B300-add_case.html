@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    <title>B300-建案內容</title>
+</head>
+
+<body>
+    <div class="wrapper_buildingList">
+        <header class="build_header">
+            <section class="header_upper">
+                <div class="header_frame">
+                    <div class="header_menu_switcher">
+                        <div class="icon-menu"><a href="javascript:;"></a></div>
+                    </div>
+                    <div class="header_logo">
+                        <a href="javascript:;"><img src="./images/logo.png" alt="OpenAlign"></a>
+                    </div>
+                    <div class="header_switch-wrapper">
+                        <span class="header_company-name">隔壁老王</span>
+                    </div>
+
+                    <div class="header_stickRight">
+                        <div class="header_lauguage dropbtn" onclick="myFunction()" id="toggle_lange">
+                            <div class="header_title">
+                                <div class="header_icon" style="position:relative;">
+                                    <a href="javascript:;">
+                                        <img src="./images/icon/globe.png" alt="">&nbsp;&nbsp;<span>繁體中文</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- <div style="position: absolute; top: 0px; left: 0px;"></div>
+                            <div class="popup-overlay "
+                                style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 998; background-color: rgba(0, 0, 0, 0);">
+                            </div> -->
+                            <div class="popup-content" id="lange_show" style="display:none;">
+                                <div class="header-list dropdown-content">
+                                    <div class="header-lange">English</div>
+                                    <div class="header-lange">中文簡体</div>
+                                    <div class="header-lange">日本語</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_system-message">
+                            <div class="header_bell" style="position:relative;" id="header_bell">
+                                <a href="javascript:;"><img src="./images/icon/bell.svg" alt=""></a>
+                            </div>
+
+                            <div class="popup-content_bell" id="popup-content_bell" style="display:none;">
+                                <div class="header_account-message__1IDkK">
+                                    <div class="header_row__2cEYH header_top__1wuFc">帳戶公佈訊息</div>
+                                    <div class="header_message-list__1wx86 header_column__vaQSb">
+                                        <div class="header_row__2cEYH_content">
+                                            <div class="header_light__33YYp"></div>
+                                            <div class="header_column__vaQSb">
+                                                <div class="header_text__wgXvx"><img src="./images/icon/moon-full.png"
+                                                        alt="notice">系統維修暫停通知</div>
+                                                <div class="header_text__wgXvx header_date__1-Oi9">09/28/2020</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="header_row__2cEYH_content">
+                                            <div class="header_light__33YYp"></div>
+                                            <div class="header_column__vaQSb">
+                                                <div class="header_text__wgXvx"><img src="./images/icon/moon-full.png"
+                                                        alt="notice">系統維修暫停通知</div>
+                                                <div class="header_text__wgXvx header_date__1-Oi9">09/28/2020</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="header_row__2cEYH_content">
+                                            <div class="header_light__33YYp"></div>
+                                            <div class="header_column__vaQSb">
+                                                <div class="header_text__wgXvx"><img src="./images/icon/moon-full.png"
+                                                        alt="notice">系統維修暫停通知</div>
+                                                <div class="header_text__wgXvx header_date__1-Oi9">09/28/2020</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="header_row__2cEYH_content">
+                                            <div class="header_light__33YYp"></div>
+                                            <div class="header_column__vaQSb header_span">
+                                                <div class="header_text__wgXvx">即時線上支援服務專線</div>
+                                                <div class="header_text__wgXvx header_date__1-Oi9">09/28/2020</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="see_more">
+                                            <p><a href="javascript:;">查看更多</a></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="header_user-profile" id="header_user-profile">
+                            <div class="header_no-pic">小</div>
+                            <div class="popup-content_user" id="popup-content_user" style="display:none;">
+                                <div class="header_popup__2dbJ1">
+                                    <div class="header_info-wrapper__10CSN">
+                                        <div class="header_image-wrapper__t_rJZ">
+                                            <div class="header_no-pic__BRZDl">小</div>
+                                        </div>
+                                        <div class="header_info__vZYwK">
+                                            <div class="header_name__29E_Y">232 231</div>
+                                            <div class="header_email__20T9L">123@gmail.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="header_link-wrapper__1f7Ih">
+                                        <a>
+                                            <div class="header_link__1-QN4">個人設定</div>
+                                        </a>
+                                        <a href="/accountsetting/info">
+                                            <div class="header_link__1-QN4">帳戶偏好設定</div>
+                                        </a>
+                                    </div>
+                                    <div class="header_button-wrapper__2mifh">
+                                        <button class="header_btn__3jOvr header_logout__f2yTE">登出</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+            </section>
+        </header>
+
+
+        <!-- 列表內容 -->
+        <div class="main_list">
+            <section class="sidebar_side-bar">
+                <div class="sidebarMenu_entry" title="建案列表">
+                    <a href="javascript:;">
+                        <div class="sidebarMenu_pic">
+                            <div class="icon-projectlist"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sidebarMenu" title="帳戶會員">
+                    <a href="javascript:;">
+                        <div class="sidebarMenu_pic">
+                            <div class="icon-contactbook"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sidebar_bottom"></div>
+            </section>
+
+            <!-- 列表內容 -->
+
+            <div class="main_main_addcase">
+                <div>
+                    <div class="main_board">
+                        <section class="top_top__3h_DI">
+                            <div class="breadCrumbs_root__3-gJW">
+                                <div class="breadCrumbs_text"><a href="javascript:;" class="ac">建案列表</a> &gt;
+                                    <span class="bold">新增建案</span></div>
+                            </div>
+
+                           <div class="cancelled_wrap">
+                            <div class="cancelled_buttons">
+                                <a href="javascript:;">取消</a>
+                            </div>
+                           </div> 
+                           
+
+                        </section>
+
+                        <!-- 內容 開始 -->
+                        <div class="add_case_frame">
+                            <div class="newProject_frame newProject_type">
+                                <div class="new_case_build newProject_type">
+                                    <div class="new_case_title">新增建案</div>
+                                    <div class="new_case_step">
+                                        <div class="new_case_circle new_case_circle_active"></div>
+                                        <div class="new_case_circle"></div>
+                                        <div class="new_case_circle"></div>
+                                        <div class="new_case_circle"></div>
+                                    </div>
+                                </div>
+
+                                <div class="newcase_fill">
+                                    <div class="please_fill_frame">
+                                        <div class="please_fill_title">請輸入建案基本資料</div>
+                                    </div>
+                                </div>
+
+                                <div class="project_input project_info">
+                                    <div class="project_info_row">
+                                        <div class="project_title">建案名稱</div>
+                                        <input type="text" class="input_data" maxlength="100">
+                                    </div>
+
+                                    <div class="project_info_row">
+                                        <div class="project_title">建案類別</div>
+                                        <select name="" id="" class="input_select">
+                                            <option selected="請選擇" value="">請選擇...</option>
+                                            <option value="">住宅建築</option>
+                                            <option value="">商用建築</option>
+                                            <option value="">公共建築</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="project_info_row">
+                                        <div class="project_title">國家/地區</div>
+                                        <select name="" id="" class="input_select">
+                                            <option selected="請選擇" value="">請選擇...</option>
+                                            <option value="">台灣</option>
+                                            <option value="">日本</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="project_info_row">
+                                        <div class="project_title">省/洲/縣</div>
+                                        <select name="" id="" class="input_select">
+                                            <option selected="請選擇" value="">請選擇...</option>
+                                            <option value="">台北市</option>
+                                            <option value="">桃園市</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="project_info_row">
+                                        <div class="project_title">城市</div>
+                                        <select name="" id="" class="input_select">
+                                            <option selected="請選擇" value="">請選擇...</option>
+                                            <option value="">台北市</option>
+                                            <option value="">桃園市</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="project_info_row">
+                                        <div class="project_title">建案預算</div>
+                                        <select name="" id="" class="input_select">
+                                            <option selected="請選擇" value="">請選擇...</option>
+                                            <option value="">$0-$5,000,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="newProject_next">
+                                    <a href="javascript:;">下一步</a>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+                        <!-- 內容 結束 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        // function myFunction() {
+        //     document.getElementById("lange_show").classList.toggle("show");
+        // }
+
+        // window.onclick = function (event) {
+        //     if (!event.target.matches('.dropbtn')) {
+        //         var dropdowns = document.getElementsByClassName("dropdown-content");
+        //         var i;
+        //         for (i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             if (openDropdown.classList.contains('show')) {
+        //                 openDropdown.classList.remove('show');
+        //             }
+        //         }
+        //     }
+        // }
+
+        $("#toggle_lange").click(function () {
+            $("#lange_show").toggle();
+        });
+
+        $("#header_bell").click(function () {
+            $("#popup-content_bell").toggle();
+        });
+
+        $("#header_user-profile").click(function () {
+            $("#popup-content_user").toggle();
+        });
+
+    </script>
+
+
+</body>
+
+</html>
